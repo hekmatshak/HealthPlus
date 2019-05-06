@@ -38,7 +38,7 @@ public class _1_SplashScreen extends AppCompatActivity {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            Intent intent = new Intent(_1_SplashScreen.this, MainMenu.class);
+            Intent intent = new Intent(_1_SplashScreen.this, _2_MainMenu.class);
             stopService(new Intent(_1_SplashScreen.this, _1_SoundService.class));
             startActivity(intent);
             _1_SplashScreen.this.finish();

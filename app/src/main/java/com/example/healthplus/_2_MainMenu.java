@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class MainMenu extends AppCompatActivity {
+public class _2_MainMenu extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +18,7 @@ public class MainMenu extends AppCompatActivity {
 
     public void goToFillingInfoPage(View view) {
 
-        Intent intent = new Intent(MainMenu.this, FillingPatientInfoActivity.class);
+        Intent intent = new Intent(_2_MainMenu.this, _3_FillingPatientInfoActivity.class);
         startActivity(intent);
     }
 }

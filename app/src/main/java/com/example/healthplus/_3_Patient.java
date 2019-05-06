@@ -8,7 +8,7 @@ import com.activeandroid.annotation.Table;
 
 //This is our table name
 @Table(name = "Patients")
-public class Patient extends Model {
+public class _3_Patient extends Model {
 
     @Column(name = "First Name")
     public String fName;
@@ -25,7 +25,7 @@ public class Patient extends Model {
     @Column(name = "Treatment")
     public String treatment;
 
-    public Patient(String fName, String lName, int age, String diagnosis, String treatment, String painEvaluation) {
+    public _3_Patient(String fName, String lName, int age, String diagnosis, String treatment, String painEvaluation) {
         this.fName = fName;
         this.lName = lName;
         this.age = age;

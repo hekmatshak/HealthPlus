@@ -12,7 +12,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.Locale;
 
-public class FillingPatientInfoActivity extends AppCompatActivity {
+public class _3_FillingPatientInfoActivity extends AppCompatActivity {
 
     private static final int REQUEST_CODE_SPEECH_INPUT = 1000;
     EditText labeledET;
@@ -98,9 +98,9 @@ public class FillingPatientInfoActivity extends AppCompatActivity {
 
 
 
-//    public void Next(View view) {
-//        Intent intent = new Intent(this, Main2Activity.class);
-//
-//        startActivity(intent);
-//    }
+    public void Next(View view) {
+        Intent intent = new Intent(this, _4_ViewPatientInfo.class);
+
+        startActivity(intent);
+    }
 }

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="20dp"
-    tools:context=".FillingPatientInfoActivity">
+    tools:context="._3_FillingPatientInfoActivity">
 
 
     <LinearLayout
@@ -180,7 +180,6 @@
                     -->
     </LinearLayout>
 
-<!--
     <Button
         android:id="@+id/button"
         android:layout_width="134dp"
@@ -191,6 +190,5 @@
         android:layout_marginBottom="27dp"
         android:onClick="Next"
         android:text="Go to the Next Page" />
--->
 
 </RelativeLayout>
