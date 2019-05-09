@@ -16,6 +16,8 @@ public class _3_FillingPatientInfoActivity extends AppCompatActivity {
 
     private static final int REQUEST_CODE_SPEECH_INPUT = 1000;
     EditText labeledET;
+    EditText FName, LName, Age, treatment, diagnosis;
+    DataBaseHelper db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -94,13 +96,28 @@ public class _3_FillingPatientInfoActivity extends AppCompatActivity {
     }
 
 
-
-
-
-
     public void Next(View view) {
-        Intent intent = new Intent(this, _4_ViewPatientInfo.class);
+        FName = findViewById(R.id.fname);
+        LName = findViewById(R.id.lname);
+        Age = findViewById(R.id.age);
+        treatment = findViewById(R.id.treatment);
+        diagnosis = findViewById(R.id.diagnosis);
 
-        startActivity(intent);
+        if (FName.getText().toString().isEmpty() || LName.getText().toString().isEmpty() || Age.getText().toString().isEmpty()
+                || treatment.getText().toString().isEmpty() || diagnosis.getText().toString().isEmpty()) {
+            Toast.makeText(this, "All fields are Required", Toast.LENGTH_LONG).show();
+        }
+        else
+        {
+            db = new DataBaseHelper(_3_FillingPatientInfoActivity.this, null, null);
+
+            db.Insert(FName.getText().toString(), LName.getText().toString(), Age.getText().toString(), treatment.getText().toString(), diagnosis.getText().toString());
+            db.close();
+
+            Intent intent = new Intent(this, _4_ViewPatientInfo.class);
+
+            startActivity(intent);
+        }
+
     }
 }

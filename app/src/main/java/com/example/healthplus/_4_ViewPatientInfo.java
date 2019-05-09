@@ -9,5 +9,7 @@ public class _4_ViewPatientInfo extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity__4__view_patient_info);
+
+
     }
 }

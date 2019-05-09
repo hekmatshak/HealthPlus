@@ -1,6 +1,7 @@
 package com.example.healthplus;
 
 import android.support.annotation.IdRes;
+import android.view.View;
 
 import com.activeandroid.Model;
 import com.activeandroid.annotation.Column;

@@ -10,7 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="._4_ViewPatientInfo"></activity>
+        <activity android:name=".DataBaseHelper"></activity>
+        <activity android:name="._4_ViewPatientInfo" />
         <activity android:name="._3_FillingPatientInfoActivity" />
         <activity android:name="._2_MainMenu" />
         <activity android:name="._1_SplashScreen">
