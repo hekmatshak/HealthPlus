@@ -120,4 +120,9 @@ public class _3_FillingPatientInfoActivity extends AppCompatActivity {
         }
 
     }
+    public void kk(View view) {
+        Intent intent = new Intent(this, _4_ViewPatientInfo.class);
+
+        startActivity(intent);
+    }
 }

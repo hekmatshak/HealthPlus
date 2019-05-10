@@ -3,6 +3,7 @@ package com.example.healthplus;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
+import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.support.v7.app.AppCompatActivity;
@@ -56,5 +57,18 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         String path = DATABASE_PATH + DATABASE_NAME;
         db = SQLiteDatabase.openDatabase(path, null, SQLiteDatabase.OPEN_READWRITE);
         return db;
+    }
+
+    public Cursor retrieve () {
+
+        db = openDataBase();
+
+
+        Cursor  cursor = db.rawQuery("select FirstName,LastName,Age,Diagnosis,Treatment from " + TABLE_NAME ,null);
+
+        if (cursor != null) {
+            cursor.moveToFirst();
+        }
+        return cursor;
     }
 }
