@@ -36,7 +36,7 @@ public class _4_ViewPatientInfo extends AppCompatActivity {
 
     public void click(View v)
     {
-        intent = new Intent(this,_3_FillingPatientInfoActivity.class);
+        intent = new Intent(this,_3a_FillingPatientInfoActivity.class);
         startActivity(intent);
     }
 }

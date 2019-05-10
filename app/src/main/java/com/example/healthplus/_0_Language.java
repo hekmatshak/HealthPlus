@@ -41,18 +41,21 @@ public class _0_Language extends AppCompatActivity {
                 {
                     setLocale("ar");
                     recreate();
+                    startActivity(intent);
+
                 }
                 else if (i==1)
                 {
                     setLocale("en");
                     recreate();
+                    startActivity(intent);
+
                 }
                 dialogInterface.dismiss();
             }
         });
         AlertDialog alertDialog=alert.create();
         alert.show();
-        startActivity(intent);
     }
     private void setLocale(String lang)
     {
