@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Health Plus</string>
+    <string name="splashscreen">شاشة الاستقبال</string>
+    <string name="fillInfo">تعبئة معلومات المريض</string>
+    <string name="awarness">جزء التوعية</string>
+    <string name="vision">الرؤية المستقبلية للبرنامج</string>
+    <string name="fillingPatientInfoPage">معلومات المريض</string>
+    <string name="fname">الاسم الأول</string>
+    <string name="lname">اسم العائلة</string>
+    <string name="age">العمر</string>
+    <string name="diagnosis">التشخيص</string>
+    <string name="treatment">العلاج</string>
+    <string name="painEvaluation">تقييم نسبة الألم: </string>
+    <string name="noHurtRB">لا يوجد ألم</string>
+    <string name="littleHurtRB">ألم خفيف</string>
+    <string name="worstHurtRB">ألم شديد</string>
+    <string name="saveToDb">حفظ المعلومات</string>
+    <string name="awarnessPage">توعية العمليات الجراحية</string>
+</resources>

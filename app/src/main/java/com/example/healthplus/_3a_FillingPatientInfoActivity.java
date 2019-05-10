@@ -12,7 +12,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.Locale;
 
-public class _3_FillingPatientInfoActivity extends AppCompatActivity {
+public class _3a_FillingPatientInfoActivity extends AppCompatActivity {
 
     private static final int REQUEST_CODE_SPEECH_INPUT = 1000;
     EditText labeledET;
@@ -22,7 +22,7 @@ public class _3_FillingPatientInfoActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_filling_patient_info);
+        setContentView(R.layout.activity__3a__filling_patient_info);
 
 
     }
@@ -109,7 +109,7 @@ public class _3_FillingPatientInfoActivity extends AppCompatActivity {
         }
         else
         {
-            db = new DataBaseHelper(_3_FillingPatientInfoActivity.this, null, null);
+            db = new DataBaseHelper(_3a_FillingPatientInfoActivity.this, null, null);
 
             db.Insert(FName.getText().toString(), LName.getText().toString(), Age.getText().toString(), treatment.getText().toString(), diagnosis.getText().toString());
             db.close();

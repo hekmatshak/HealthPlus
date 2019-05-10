@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="20dp"
-    tools:context="._3_FillingPatientInfoActivity">
+    tools:context="._3a_FillingPatientInfoActivity">
 
 
     <LinearLayout
@@ -17,7 +17,9 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Patient's Information" />
+            android:text="@string/fillingPatientInfoPage"
+            android:textSize="36dp"
+            android:textColor="@color/colorPrimary"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -29,7 +31,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
-                android:hint="First Name"
+                android:hint="@string/fname"
                 android:inputType="text" />
 
             <ImageButton
@@ -53,7 +55,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
-                android:hint="Last Name"
+                android:hint="@string/lname"
                 android:inputType="text" />
 
             <ImageButton
@@ -77,7 +79,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
-                android:hint="Age"
+                android:hint="@string/age"
                 android:inputType="number" />
 
             <ImageButton
@@ -101,7 +103,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
-                android:hint="Diagnosis"
+                android:hint="@string/diagnosis"
                 android:inputType="text" />
 
             <ImageButton
@@ -125,7 +127,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
-                android:hint="Treatment"
+                android:hint="@string/treatment"
                 android:inputType="text" />
 
             <ImageButton
@@ -147,7 +149,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Pain Evaluation: " />
+                android:text="@string/painEvaluation"/>
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -156,39 +158,34 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="No Hurt" />
+                    android:text="@string/noHurtRB" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Hurt Little" />
+                    android:text="@string/littleHurtRB" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Hurt Worst" />
+                    android:text="@string/worstHurtRB" />
 
             </RadioGroup>
 
         </LinearLayout>
 
-        <!--        <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:onClick="Next"
-                    android:text="Submit" />
-                    -->
     </LinearLayout>
 
     <Button
         android:id="@+id/button"
-        android:layout_width="134dp"
+        android:layout_width="500dp"
         android:layout_height="97dp"
         android:layout_alignEnd="@+id/linearL"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="215dp"
-        android:layout_marginBottom="27dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginBottom="67dp"
         android:onClick="Next"
-        android:text="Go to the Next Page" />
+        android:text="@string/saveToDb" />
 
 </RelativeLayout>

@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">Health Plus</string>
+    <string name="splashscreen">Splash Screen</string>
+    <string name="fillInfo">Fill Patient Info</string>
+    <string name="awarness">Awarness Part</string>
+    <string name="vision">Future Vision</string>
+    <string name="fillingPatientInfoPage">Patient\'s Information</string>
+    <string name="fname">First Name</string>
+    <string name="lname">Last Namee</string>
+    <string name="age">Age</string>
+    <string name="diagnosis">Diagnosis</string>
+    <string name="treatment">Treatment</string>
+    <string name="painEvaluation">Pain Evaluation: </string>
+    <string name="noHurtRB">No Hurt</string>
+    <string name="littleHurtRB">Little Hurt</string>
+    <string name="worstHurtRB">Worst Hurt</string>
+    <string name="saveToDb">Save The Information</string>
+    <string name="awarnessPage">Medical Surgery Awarness</string>
+
 </resources>

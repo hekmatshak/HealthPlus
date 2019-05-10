@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="._2_MainMenu">
+
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_above="@id/cen"
+        android:layout_centerHorizontal="true"
+        android:text="@string/fillInfo"
+        android:background="@color/colorPrimary"
+        android:onClick="goToFillingInfoPage"
+        android:layout_margin="15dp"/>
+
+    <Button
+        android:id="@+id/cen"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/awarness"
+        android:background="@color/colorPrimary"
+        android:onClick="goToAwarnessPage"
+        android:layout_margin="15dp"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/cen"
+        android:text="@string/vision"
+        android:background="@color/colorPrimary"
+        android:onClick="goToVisionPage"
+        android:layout_margin="15dp"/>
+    />
+
+
+
+</RelativeLayout>
